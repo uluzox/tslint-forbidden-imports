@@ -36,8 +36,3 @@ To adapt this custom TSLint rule
 - install Typescript globally `yarn global add typescript`
 - adapt the `forbiddenImportsRule.ts`
 - compile it to JS -> `tsc forbiddenImportsRule.ts`
-
-
-
-
-## License
