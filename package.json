@@ -1,6 +1,6 @@
 {
   "name": "forbidden-imports-tslint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tslint rule to forbid imports of certain RegExes in specified paths.",
   "keywords": [
     "tslint",
