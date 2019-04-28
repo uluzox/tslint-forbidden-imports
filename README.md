@@ -7,8 +7,11 @@ A tslint rule to forbid imports of certain RegExes in specified paths. It is not
 ```
 
 ## Usage
-- Add Rule to your repository.
-- Update your `tslint.json`
+- Add rule as dev dependency:
+```
+yarn add -D forbidden-imports-tslint
+```
+- Update your `tslint.json` as follows:
 
 ```
 {
@@ -30,7 +33,7 @@ A tslint rule to forbid imports of certain RegExes in specified paths. It is not
 ```
 - Run tslint. In Angular you can use `ng lint`.
 
-## Adaption of the TSLint Rule
+## Development
 
 To adapt this custom TSLint rule
 - install Typescript globally `yarn global add typescript`
