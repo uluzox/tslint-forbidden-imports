@@ -13,7 +13,7 @@ A tslint rule to forbid imports of certain RegExes in specified paths. It is not
 ```
 {
   "rulesDirectory": [
-    "pathToFolderWithLintingRules"
+    "node_modules/forbidden-imports-tslint/src"
   ],
   "rules": {
     "forbidden-imports": [true,

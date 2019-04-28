@@ -29,6 +29,9 @@
   "scripts": {
     "build": "tsc src/forbiddenImportsRule.ts"
   },
+  "engines": {
+    "node": ">=10.15.3"
+  },
   "dependencies": {
   },
   "devDependencies": {
