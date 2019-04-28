@@ -11,8 +11,24 @@ A tslint rule to forbid imports of certain RegExes in specified paths. It is not
 ```
 yarn add -D forbidden-imports-tslint
 ```
-- Update your `tslint.json` as follows:
+Assuming you have the following file structure:
+- my-client
+- client-common
+    - components
+    - directives
+    - services
+- other-client
 
+And the following `paths` are defined in your `tsconfig.json`:
+```
+"paths": {
+      "@someOtherClient/*": ["./other-client/*"],
+      "@myClient/*": ["./my-client/*"],
+}
+```
+If you want to forbid each of the clients to import components from the other client and also want to forbid 
+the common components and directives to import (unshared) components from the clients while common services have no import restriction.
+Define the following rule in your `tslint.json`:
 ```
 {
   "rulesDirectory": [
@@ -22,8 +38,9 @@ yarn add -D forbidden-imports-tslint
     "forbidden-imports": [true,
       {
         "my-client": ["@someOtherClient*"],
-        "client-common/components": ["not/this/path/*"],
-        "client-common/directives": ["@someOtherClient*", "myClient*"]
+        "other-client": ["@myClient*"],
+        "client-common/components": ["@someOtherClient*", "@myClient*"],
+        "client-common/directives": ["@someOtherClient*", "@myClient*"]
     
       }
     ]
