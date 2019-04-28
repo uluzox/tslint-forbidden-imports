@@ -1,4 +1,3 @@
-import * as Path from 'path';
 import * as Lint from 'tslint';
 import { findImports, ImportKind } from 'tsutils';
 import * as TS from 'typescript';

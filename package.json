@@ -1,0 +1,39 @@
+{
+  "name": "forbidden-imports-tslint",
+  "version": "0.0.1",
+  "description": "A tslint rule to forbid imports of certain RegExes in specified paths.",
+  "keywords": [
+    "tslint",
+    "forbidden",
+    "imports"
+  ],
+  "homepage": "https://github.com/uluzox/tslint-forbidden-imports",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uluzox/tslint-forbidden-imports.git"
+  },
+  "author": {
+    "name": "Thorsten Hersam",
+    "url": "https://github.com/uluzox"
+  },
+  "licenses": [
+    {
+      "type": "The Unlicense",
+      "url": "https://github.com/uluzox/tslint-forbidden-imports/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/uluzox/tslint-forbidden-imports/issues"
+  },
+  "main": "src/forbiddenImportsRule.js",
+  "scripts": {
+    "build": "tsc src/forbiddenImportsRule.ts"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^3.4.5",
+    "@types/node": "^11.13.8",
+    "tslint": "^5.16.0"
+  }
+}

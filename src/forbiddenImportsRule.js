@@ -15,6 +15,12 @@ var __extends = (this && this.__extends) || (function () {
 exports.__esModule = true;
 var Lint = require("tslint");
 var tsutils_1 = require("tsutils");
+/**
+ * Custom TS Lint rule for prohibiting imports of a pattern in a directory
+ * c.f. https://palantir.github.io/tslint/develop/custom-rules/
+ *
+ *
+ */
 var Rule = /** @class */ (function (_super) {
     __extends(Rule, _super);
     function Rule() {

@@ -35,4 +35,4 @@ A tslint rule to forbid imports of certain RegExes in specified paths. It is not
 To adapt this custom TSLint rule
 - install Typescript globally `yarn global add typescript`
 - adapt the `forbiddenImportsRule.ts`
-- compile it to JS -> `tsc forbiddenImportsRule.ts`
+- compile it to JS -> `yarn build`
